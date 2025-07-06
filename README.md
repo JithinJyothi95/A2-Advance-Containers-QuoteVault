@@ -58,9 +58,23 @@ All services are run in containers using Docker Compose and communicate over an 
 git clone https://github.com/JithinJyothi95/A2-Advance-Containers-QuoteVault.git
 cd A2-Advance-Containers-QuoteVault
 ```
-## Setup & Deployment
 
+## Setup & Deployment
+- Install frontend dependencies:
 ```bash
+cd frontend
+npm install
+cd ..
+```
+- Create a .env file in the root directory (same level as docker-compose.yml) with the following content:
+```
+DB_NAME=quotevault
+DB_USER=devtedsuser
+DB_PASSWORD=devtedspass
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+```
+
 # Step 1: Clean build and run
 docker compose down -v
 docker compose build --no-cache
