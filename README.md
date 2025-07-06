@@ -80,9 +80,11 @@ docker compose down -v
 docker compose build --no-cache
 docker compose up -d
 
-# Step 2: Access the app in browser (GitHub Codespaces)
-# Click the "PORTS" tab and open forwarded port 3000
+## Step 2: Access the app in browser (GitHub Codespaces)
+- Click the "PORTS" tab and open forwarded port 3000
+```
 https://<your-codespace-id>-3000.app.github.dev
+```
 ---
 
 ## Database Verification
