@@ -1,22 +1,21 @@
-# Node modules
+# Node.js
 node_modules/
+npm-debug.log*
 
-# Python cache
+# Python
 __pycache__/
 *.pyc
 
-# Environment variables
+# Env
 .env
 
-# Build artifacts
-frontend/build/
+# Docker
+db_data/
 *.log
 
-# Docker volumes
-db_data/
+# Build
+frontend/build/
 
-# VS Code
+# IDEs & OS
 .vscode/
-
-# OS files
 .DS_Store
